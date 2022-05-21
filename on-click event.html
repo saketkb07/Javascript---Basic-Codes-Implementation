@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>On click example</title>
+    </head>
+    <body>
+        <input type="text" name="name"id="name"/>
+        <button onclick="greet()">
+        </button>
+        <div class="greet">
+
+        </div>
+    </body>
+    <script>
+        function greet(){
+            var name = document.getElementById('name').value;
+            var string = "Welcome " + name;
+            document.getElementsByClassName('greet')[0].innerHTML = string;
+        }
+    </script>
+</html>
